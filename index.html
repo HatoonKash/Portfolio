@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar" id="desktop-nav">
+            <div class="logo">
+                <h1><span class="grad">Hatoon</span></h1>
+            </div>
+            <div class="container">
+                <ul class="nav-links">
+                    <li class="nav-item"><a href="#about">About Me</a></li>
+                    <li class="nav-item"><a href="#projects">Projects</a></li>
+                    <li class="nav-item"><a href="#skills">Skills</a></li>
+                    <li class="nav-item"><a href="#experience">Experience</a></li>
+                </ul>
+            </div>
+        </nav>
+       </nav>
+        <nav class="navbar" id="hamburger-nav">
+            <div class="logo">
+                <h1><span class="grad">Hatoon</span></h1>
+            </div>
+            <div class="menu">
+                <div class="hamburger" onclick="toggleMenu()">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <div class="menu-links">
+                    <li><a href="#about" onclick="toggleMenu()">About Me</a></li>
+                    <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                    <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+                    <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+
+    <main>
+        <section id="info">
+            <div class="info-text">
+                <p class="info-text-p1">
+                    Hello, I'm...
+                </p>
+                <h1 class="title"><span class="grad">Hatoon Alkashgari</span></h1>
+                <p class="info-text-p2">
+                    Software Engineer
+                </p>
+                <div class="btn-container">
+                    <button class="btn btn-color-2" onclick="window.open('./files/HatoonAlkshgariCV.pdf')">Download CV</button>
+                </div>
+            </div>
+        </section>
+        <section id="about" class="section">
+            <div class="container">
+                <h1 class="sub-title"><span class="grad">About Me</span></h1>
+                <p>Hello! I'm Hatoon Alkashgari, A Software Engineering graduatefrom the University of Jeddah. 
+					During my academic journey, I honed my skills in programming Languages (such as java, and others).
+					I am adept at quickly learning new technologies andapplying them to solve real-world problems.
+				</p>
+                <h2 class="sub-title"><span class="grad">Education</span></h2>
+                <div class="edu-container">
+                    <div class="edu">
+                        <h4>Bachelors Degree in Software Engineering</h4>
+                        <p>University of Jeddah<br>GPA, 4.68 out of 5</p>
+                        <p><strong>Graduated: </strong>Dec 2023</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <div class="container">
+                <h1 class="sub-title"><span class="grad">Projects</span></h1>
+                <div class="project-list">
+                    <div class="project">
+                        <h3>Corridors</h3>
+                        <img src="./files/project1.png" alt="Project 1">
+                        <p>
+							My graduation project, an AR indoor navigation application for students, and other users, providing
+							turn-by-turn directions, using unity, and firebase.
+		 				</p>
+                         <div class="btn-container">
+                            <a href="https://github.com/HatoonKash">
+                                <button class="btn btn-color-1" href="https://github.com/HatoonKash">Github</button>
+                            </a>
+                         </div>
+                    </div>
+                    <div class="project">
+                        <h3>Resume</h3>
+                        <img src="./files/project2.png" alt="Project 2">
+                        <p>
+							An assignment for 'Web Development' course, for a simple resume website.
+						</p>
+                        <div class="btn-container" style="padding-top: 40px;">
+                            <a href="https://github.com/HatoonKash">
+                                <button class="btn btn-color-1" href="https://github.com/HatoonKash">Github</button>
+                            </a>
+                         </div>
+                    </div>
+                    <div class="project">
+                        <h3>Luxury Hotel</h3>
+                        <img src="./files/project4.png" alt="Project 3">
+                        <p>
+							A responsive website for a hotel booking system, designed with HTML, CSS, and JavaScript.
+						</p>
+                        <div class="btn-container" style="padding-top: 1rem;">
+                            <a href="https://github.com/HatoonKash">
+                                <button class="btn btn-color-1" href="https://github.com/HatoonKash">Github</button>
+                            </a>
+                         </div>
+                    </div>
+                    <div class="project">
+                        <h3>Golden Glow</h3>
+                        <img src="./files/project3.png" alt="Project 3">
+                        <p>
+							Front-end of an online shopping website.
+						</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="skills" class="section">
+            <h1 class="sub-title"><span class="grad">Skills</span></h1>
+            <div class="container" id="skills-details-container">
+                <div class="skills-container">
+                    <div class="details-container">
+                        <div class="article-container">
+                            <article>
+                                <div>
+                                    <h3><i class='bx bx-check' id="check-icon"></i>Java</h3>
+                                    <p>Experienced</p>
+                                </div>
+                            </article>
+                            <article>
+                                <div>
+                                    <h3><i class='bx bx-check' id="check-icon"></i>HTML</h3>
+                                    <p>Experienced</p>
+                                </div>
+                            </article>
+                            <article>
+                                <div>
+                                    <h3><i class='bx bx-check' id="check-icon"></i>CSS</h3>
+                                    <p>Basic</p>
+                                </div>
+                            </article>
+                            <article>
+                                <div>
+                                    <h3><i class='bx bx-check' id="check-icon"></i>JavaScript</h3>
+                                    <p>Basic</p>
+                                </div>
+                            </article>
+                            <article>
+                                <div>
+                                    <h3><i class='bx bx-check' id="check-icon"></i>UI/UX Design</h3>
+                                    <p>Intermediate</p>
+                                </div>
+                            </article>
+                            <article>
+                                <div>
+                                    <h3><i class='bx bx-check' id="check-icon"></i>Figma</h3>
+                                    <p>Basic</p>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="section">
+            <div class="container">
+                <h1 class="sub-title"><span class="grad">Experience</span></h1>
+                <div class="experience-list">
+                    <div class="experience">
+                        <h3>Data Analyst, UoJ deanship of quality and assurance</h3>
+                        <p>Summer training, developed dashboard using Power BI as well as analyzing and processing large data sets.</p>
+                        <p><strong>Duration:</strong> July 2023 - Sep 2023</p>
+                    </div>
+                    <div class="experience">
+                        <h3>Networks Engineering Specialist, Prince Sultan Aviation Academy</h3>
+                        <p>6 months tamheer position, worked as technical support, well as a tickiting system agent, 
+                            and a minor understang of academy's training management system(TMS), via Dynamics 365
+                        </p>
+                        <p><strong>Duration:</strong> Aug 2024 - Present</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div>
+            <p>Stay In Contact</p>
+            <div class="footer-links">
+                <a href="mailto:hatoonkashgari@gmail.com"><i class='bx bx-envelope' id="contactLinks"></i></a>
+                <a href="https://www.linkedin.com/in/hatoon-alkashgari-277b03266"><i class='bx bxl-linkedin-square' id="contactLinks"></i></a>
+                <a href="https://github.com/HatoonKash"><i class='bx bxl-github' id="contactLinks"></i></a>
+            </div>
+            <div>
+                <p>&copy; Hatoon Alkashgari.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
